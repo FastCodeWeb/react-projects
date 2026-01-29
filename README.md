@@ -1,4 +1,4 @@
-# ⚛️ React Projects Collection
+## ⚛️ React Projects Collection
 
 A curated collection of **React.js projects** built to practice, learn, and master modern frontend development.
 
