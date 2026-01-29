@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins",sans-serif;
+  caret-color: transparent;
+}
+
+html{
+  font-size: 18px;
+}
+
+img,
+button,
+.navbar,
+.hero,
+.card{
+  user-select: none;
+}
+
+body{
+  background: #f8f8f8;
+  color: #111;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+button{
+  border: none;
+  cursor: pointer;
+}
+
+.container{
+  width: 85%;
+  margin: auto;
+}

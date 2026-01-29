@@ -1,0 +1,140 @@
+.hero{
+    padding: 80px 0;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.hero-inner{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Text */
+.hero-text h1{
+    font-size: 3.5rem;
+}
+
+.hero-text h1 b{
+    color: #b30000;
+}
+.hero-text p{
+    margin: 16px 0;
+    color: #555;
+}
+
+.hero-text button{
+    padding: 12px 35px;
+    background: #000;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 15px; 
+}
+
+.hero-shoe-wrapper{
+    position: relative;
+    width: 520px;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-shoe{
+    width: 500px;
+    position: relative;
+    z-index: 3;
+    filter: drop-shadow(0 25px 35px rgba(120,0,0,0.45));
+    animation: shoe-float 4s ease-in-out infinite;
+    
+}
+.shape{
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.shape-left-bottom{
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle at top,
+    #ff4d4d,
+    #8b0000);
+    left: -150px;
+    bottom: -150px;
+    opacity: .9;
+
+    animation: blob-move 10s ease-in-out infinite ;
+
+}
+
+.shape-top-center{
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle at center,
+    rgba(179,0,0,0.9),
+    rgba(90,0,0,0.9)
+    );
+    top: 100px;
+    left: 40%;
+    opacity: .85;
+
+    animation: blob-move 7s ease-in-out infinite reverse;
+}
+
+.shape-one{
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle at top,
+    #b30000,
+    #6b0000);
+    position: absolute;
+    top: -20px;
+    right: -190px;
+    animation: blob-move  6s ease-in-out infinite;
+
+}
+
+.shape-two{
+    width: 220px;
+    height: 220px;
+    background: radial-gradient(circle at top,
+    #ff4d4d,
+    #8b0000);
+    left: 30px;
+    bottom: -150px;
+    animation: blob-move 8s ease-in-out infinite reverse;
+}
+
+
+/* Animation */
+
+@keyframes shoe-float{
+    0%{
+        transform: translateY(0);
+    }
+
+     50%{
+        transform: translateY(-12px);
+    }
+
+     100%{
+        transform: translateY(0);
+    }
+}
+
+
+
+@keyframes blob-move{
+    0%{
+        transform: translate(0,0) scale(1);
+    }
+
+     50%{
+         transform: translate(15px,-15px) scale(1.05);
+    }
+
+     100%{
+            transform: translate(0,0) scale(1);
+    }
+}

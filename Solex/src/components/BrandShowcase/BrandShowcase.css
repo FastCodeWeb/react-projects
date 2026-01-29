@@ -1,0 +1,76 @@
+.brand-showcase{
+    position: relative;
+    background: #b30000;
+    overflow: hidden;
+}
+
+.bs-inner{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    gap: 60px;
+    position: relative;
+    z-index: 2;
+}
+
+.bs-text{
+    max-width: 520px;
+    color: #fff;
+}
+
+.bs-text h2{
+    margin: 14px 0;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.bs-text p{
+    margin: 18px 0 28px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.75);
+
+}
+
+.bs-text button{
+    padding: 14px 40px;
+    border-radius: 30px;
+    background: #000;
+    color: #fff;
+    font-size: 15px;
+}
+
+.bs-image-wrapper img{
+    width: 420px;
+    filter: drop-shadow(0 40px 60px rgba(0,0,0,0.45));
+}
+
+.bs-circle{
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.bs-circle-one{
+    width: 420px;
+    height: 420px;
+    background: radial-gradient(circle,#ff4d4d,#7a0000);
+    top: -160px;
+    left: -160px;
+}
+
+.bs-circle-two{
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle,#8b0000,#3d0000);
+    bottom: -150px;
+    left: -120px;
+}
+
+.bs-circle-three{
+    width: 260px;
+    height: 260px;
+    background: radial-gradient(circle,rgba(255,255,255,.20),rgba(255,255,255,0));
+    top: 50%;
+    right: 260px;
+    transform: translateY(-50%);
+}
